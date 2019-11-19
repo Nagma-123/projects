@@ -32,9 +32,9 @@
                 <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
             </div>
             @can('update', $user->profile)
-                <a href="/p/create">Add New Post</a>
+                <a href="/p/create">Add New Posts</a>
             @endcan
-             
+              
         </div>
         @can('update', $user->profile)
             <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
